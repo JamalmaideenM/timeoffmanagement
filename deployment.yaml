@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: timeoff-deployment
+  namespace: timeoff
   labels:
     app: timeoff
 spec:
@@ -19,3 +20,4 @@ spec:
         image: jamal1710/timeoff:v1
         ports:
         - containerPort: 3000  # Assuming your application listens on port 80
+
